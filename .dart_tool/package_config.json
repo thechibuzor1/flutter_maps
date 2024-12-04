@@ -81,9 +81,9 @@
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///Users/amadi/.pub-cache/hosted/pub.dev/flutter_lints-4.0.0",
+      "rootUri": "file:///Users/amadi/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.5"
     },
     {
       "name": "flutter_test",
@@ -135,9 +135,9 @@
     },
     {
       "name": "lints",
-      "rootUri": "file:///Users/amadi/.pub-cache/hosted/pub.dev/lints-4.0.0",
+      "rootUri": "file:///Users/amadi/.pub-cache/hosted/pub.dev/lints-5.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.5"
     },
     {
       "name": "matcher",
@@ -302,7 +302,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-12-04T11:18:00.654019Z",
+  "generated": "2024-12-04T22:39:55.410376Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/amadi/Desktop/development/flutter",

@@ -1,9 +1,6 @@
-import 'dart:collection';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:iconly/iconly.dart';
 import 'package:maps_flutter/bloc/drawer_bloc.dart';
 import 'package:maps_flutter/widgets/drawer_widget.dart';
 import 'package:maps_flutter/views/history_view.dart';
