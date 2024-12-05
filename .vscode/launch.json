@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "flutter_maps",
+            "name": "Maps",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "flutter_maps (profile mode)",
+            "name": "Maps (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "flutter_maps (release mode)",
+            "name": "Maps (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

@@ -7,28 +7,72 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox.expand(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        body: SingleChildScrollView(
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        child: (Column(
           children: [
-            const Icon(
-              IconlyBold.profile,
-              size: 100,
+            const UserAccountsDrawerHeader(
+              accountName: Text(
+                "User",
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              accountEmail: Text(
+                'User@email.com',
+                style: TextStyle(color: Colors.white),
+              ),
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage(
+                          "https://wallpapers.com/images/hd/profile-picture-background-xyyvpmbyouhknwrk.jpg"))),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    "https://murrayglass.com/wp-content/uploads/2020/10/avatar-2048x2048.jpeg"),
+              ),
             ),
-            const Text(
-              "Profile",
-              style: TextStyle(fontSize: 25),
-            ),
-            const SizedBox(
-              height: 8,
-            ),
-            const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
-                child: Text("home screen")),
-            TextButton(onPressed: () {}, child: const Text("Go to home"))
+            Form(
+                child: Column(
+              children: [
+                const SizedBox(height: 25),
+                TextFormField(
+                  decoration: const InputDecoration(
+                      label: Text("First Name"),
+                      prefixIcon: Icon(IconlyBold.profile)),
+                ),
+                const SizedBox(height: 15),
+                TextFormField(
+                  decoration: const InputDecoration(
+                      label: Text("Last Name"),
+                      prefixIcon: Icon(IconlyBold.profile)),
+                ),
+                const SizedBox(height: 15),
+                TextFormField(
+                  decoration: const InputDecoration(
+                      label: Text("Email"),
+                      prefixIcon: Icon(IconlyBold.message)),
+                ),
+                const SizedBox(height: 50),
+                SizedBox(
+                  width: 200,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
+                        side: BorderSide.none,
+                        shape: const StadiumBorder()),
+                    onPressed: () {},
+                    child: const Text(
+                      "Save Changes",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+              ],
+            ))
           ],
-        ),
+        )),
       ),
-    );
+    ));
   }
 }
